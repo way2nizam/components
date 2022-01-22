@@ -5,3 +5,25 @@
   --headings-color: #313131;
   --body-color: #918ca4;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: var(--body-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--headings-color);
+}
