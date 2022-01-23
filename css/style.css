@@ -1,10 +1,11 @@
 :root {
   --ascent-color: #ff3400;
   --body-color: #918ca4;
-  --headings-color: #313131;
+  --headings-color: #5a5a5a;
   --primary-color: #2584ff;
   --secondary-color: #00d9ff;
   --body-bg-color: #f7f7f7;
+  --color-hover-bg-color: #f5f5f5;
 }
 
 * {
@@ -151,3 +152,50 @@ p {
 }
 
 /* badges CSS End */
+
+/* Drawer Component CSS start here */
+
+.drawer {
+  align-content: flex-start;
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem 0 lightgray;
+  color: var(--headings-color);
+  padding: 1rem;
+  width: 25.6rem;
+}
+
+.drawer__header h3 {
+  font-size: 2.5rem;
+}
+
+.drawer__header h6 {
+  font-size: 1.5rem;
+  color: var(--body-color);
+}
+
+.drawer__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.drawer-list-item {
+  color: var(--headings-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+
+.drawer-list-item:nth-child(1) {
+  background-color: #e6d7fd;
+  color: #6200ee;
+}
+
+.drawer-list-item:hover {
+  background-color: var(--color-hover-bg-color);
+}
+.drawer-icon {
+  padding-right: 2.5rem;
+}
